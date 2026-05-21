@@ -41,7 +41,15 @@ const order = foodInput.value
         cart.classList.remove("error")
         foodInput.classList.remove("error")
     }
+
 })
+
+   foodInput.onclick =()=>{
+     foodInput.value = ''
+     p.textContent = ''
+    cart.classList.remove("accept")
+}
+
 
 
 
