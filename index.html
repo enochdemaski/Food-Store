@@ -7,11 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-    <input type="text" id="input" placeholder="Please Enter Your Food">
-    <button class="btn" id="btn">submit</button>
-    </div>
-    <div id="cart" class="cart"></div>
+    <!-- Display all available food -->
+
+    <section class="buttons">
+        <button class="menu-btn" id="menu-btnm">menu</button>
+        <button class="menu-btn" id="menu-btnc">check food by name</button>
+        <button class="menu-btn" id="menu-btn">replace food by index</button>
+        <button class="menu-btn" id="menu-btn">add food to menu</button>
+    </section>
+
+
+     <section class="first">
+        <ul class="menu" id="menu">
+            <h1 class="menuhead" id="menuhead"></h1>
+            <p class="re" id="re"></p>
+        </ul>
+     </section>
+
+
+    <!-- Search if food is available -->
+    <section class="foodcheck" id="foodcheck">
+        <h1 class="check" id="check"></h1>
+        <div class="container" id="container">
+            <input type="text" id="input" placeholder="Please Enter Your Food">
+            <button class="btn" id="btn">submit</button>
+        </div>
+            <div id="cart" class="cart"></div>
+    </section>
    
     <script src="main.js"></script>
 </body>

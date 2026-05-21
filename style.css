@@ -2,6 +2,7 @@
     --main-color: #656565e6;
     --primary-color: #ffffff;
     --error-color: #ff0000;
+    --black-color: #000000;
 }
 
 *{
@@ -11,19 +12,118 @@
 }
 
 body{
-    background: var(--main-color);
+    background: radial-gradient(rgba(55, 53, 52, 0.9));
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.first{
+    padding: 10px;
+}
+
+.menu-btn{
+    width: 19%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 17px 10px;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+.menu{
+    display: none;
+}
+
+
+.menuhead{
+     text-transform: capitalize;
+    font-size: 30px;
+    color: var(--black-color);
+    font-family: cursive;
+}
+
+.re{
+     text-transform: capitalize;
+    font-size: 15px;
+    color: var(--black-color);
+    font-family: cursive;
+}
+
+
+.menu-show{
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+    margin: 17px 10px;
+    background-color: var(--primary-color);
+    /* box-shadow: rgba(255, 246, 246, 0.12); */
+}
+
+li{
+    border: 1px solid var(--black-color);
+    list-style: none;
+    line-height: 30px;
+    border-radius: 4px;
+    margin-top: 7px;
+    padding: 5px;
+}
+
+li:hover{
+    background-color: var(--main-color);
+    color: var(--primary-color);
+}
+
+
+
+
+/* Check Food */
+
+.foodcheck{
+    display: none;
+    background-color: var(--black-color);
+}
+
+.foodcheck-show{
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: var(--black-color);
+    border-radius: 10px;
 }
+
+
+.check{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
 
 .container{
     background: var(--primary-color);
     border-radius: 5px;
     padding: 20px;
-    width: 70%;
+    width: 80%;
+    margin-top: 7px;
 }
 
 input{
