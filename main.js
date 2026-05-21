@@ -44,6 +44,8 @@ const order = foodInput.value
 
 })
 
+
+
    foodInput.onclick =()=>{
      foodInput.value = ''
      p.textContent = ''
