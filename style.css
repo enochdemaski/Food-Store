@@ -95,7 +95,7 @@ li:hover{
 
 .foodcheck{
     display: none;
-    background-color: var(--black-color);
+    
 }
 
 .foodcheck-show{
@@ -106,8 +106,8 @@ li:hover{
     align-items: center;
     margin: 10px 8px;
     padding: 10px;
-    background-color: var(--black-color);
     border-radius: 10px;
+    background-color: var(--black-color);
 }
 
 

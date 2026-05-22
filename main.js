@@ -21,10 +21,9 @@ document.getElementById("menu-btnm").onclick = () =>{
 document.getElementById("menu-btnc").onclick = () =>{
     const foodName = document.getElementById("foodcheck")
     const title = document.getElementById("check")
-   foodName.classList.toggle("foodcheck")
-   foodName.classList.add("foodcheck-show")
+    foodName.classList.toggle("foodcheck")
+    // foodName.classList.toggle("foodcheck-show")
    title.textContent = "check food by name."
-
 }
 
 // Check food availability
