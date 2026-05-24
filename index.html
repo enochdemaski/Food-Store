@@ -12,8 +12,8 @@
     <section class="buttons">
         <button class="menu-btn" id="menu-btnm">menu</button>
         <button class="menu-btn" id="menu-btnc">check food by name</button>
-        <button class="menu-btn" id="menu-btn">replace food by index</button>
-        <button class="menu-btn" id="menu-btn">add food to menu</button>
+        <button class="menu-btn" id="menu-btnr">replace food by index</button>
+        <button class="menu-btn" id="menu-btna">add food to menu</button>
     </section>
 
 
@@ -26,11 +26,36 @@
 
 
     <!-- Search if food is available -->
-    <section class="foodcheck" id="foodcheck">
+    <section class="panel hidden" id="foodcheck">
         <h1 class="check" id="check"></h1>
         <div class="container" id="container">
             <input type="text" id="input" placeholder="Please Enter Your Food">
             <button class="btn" id="btn">submit</button>
+        </div>
+            <div id="cart" class="cart"></div>
+    </section>
+
+    <section class="panell hiddenn" id="replace">
+        <h1 class="checkk" id="checkk"></h1>
+        <div class="containerr" id="containerr">
+            <div>
+                <input type="text" id="input" class="input" placeholder="Please Enter Food Index Number">
+            </div>
+            <div>
+                  <input type="text" id="input" class="input" placeholder="Please Enter Food To Change">
+            </div>
+            <button class="btnn" id="btnn">submit</button>
+        </div>
+            <div id="cart" class="cart"></div>
+    </section>
+
+    <section class="panelll hiddennn" id="add">
+        <h1 class="checkk" id="checkkk"></h1>
+        <div class="containerrr" id="containerrr">
+            <div>
+                  <input type="text" id="input" class="inputt" placeholder="Add Food">
+            </div>
+            <button class="btnn" id="btnn">submit</button>
         </div>
             <div id="cart" class="cart"></div>
     </section>

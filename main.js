@@ -2,6 +2,8 @@
 
 const store = ["Indomie", "Rice", "Garri", "Beans", "Banana","Turkey", "Moi-Moi"]
 
+
+
 document.getElementById("menu-btnm").onclick = () =>{
     const menu = document.getElementById("menu")
     const menuhead = document.getElementById("menuhead")
@@ -21,10 +23,26 @@ document.getElementById("menu-btnm").onclick = () =>{
 document.getElementById("menu-btnc").onclick = () =>{
     const foodName = document.getElementById("foodcheck")
     const title = document.getElementById("check")
-    foodName.classList.toggle("foodcheck")
-    // foodName.classList.toggle("foodcheck-show")
-   title.textContent = "check food by name."
+    foodName.classList.toggle("hidden")
+    title.textContent = "check food by name."
 }
+
+document.getElementById("menu-btnr").onclick = () =>{
+    const replace = document.getElementById("replace")
+    const titlee= document.getElementById("checkk")
+    replace.classList.toggle("hiddenn")
+    titlee.textContent = "change food by index"
+}
+document.getElementById("menu-btna").onclick = () =>{
+    const add = document.getElementById("add")
+    const titleee = document.getElementById("checkkk")
+    add.classList.toggle("hiddennn")
+    titleee.textContent = "a food to the list"
+}
+ 
+
+
+
 
 // Check food availability
 const btn = document.getElementById("btn")
