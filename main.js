@@ -1,9 +1,9 @@
 // Show food menu
 
-const store = ["Indomie", "Rice", "Garri", "Beans", "Banana","Turkey", "Moi-Moi"]
+const store = []
 
 
-
+//TO DISPLAY MENU-LIST
 document.getElementById("menu-btnm").onclick = () =>{
     const menu = document.getElementById("menu")
     const menuhead = document.getElementById("menuhead")
@@ -19,7 +19,7 @@ document.getElementById("menu-btnm").onclick = () =>{
         menu.appendChild(li)
     }
 
-// Show food cheaker
+// ALL BUTTONS
 document.getElementById("menu-btnc").onclick = () =>{
     const foodName = document.getElementById("foodcheck")
     const title = document.getElementById("check")
@@ -31,20 +31,20 @@ document.getElementById("menu-btnr").onclick = () =>{
     const replace = document.getElementById("replace")
     const titlee= document.getElementById("checkk")
     replace.classList.toggle("hiddenn")
-    titlee.textContent = "change food by index"
+    titlee.textContent = "change/replace food by index"
 }
 document.getElementById("menu-btna").onclick = () =>{
     const add = document.getElementById("add")
     const titleee = document.getElementById("checkkk")
     add.classList.toggle("hiddennn")
-    titleee.textContent = "a food to the list"
+    titleee.textContent = "add food to the list"
 }
  
 
 
 
 
-// Check food availability
+// FIRST BUTTON CHECKS FOR FOOD AVAILABILITY
 const btn = document.getElementById("btn")
 const foodInput = document.getElementById("input")
 const cart = document.getElementById("cart")
@@ -95,8 +95,22 @@ const order = foodInput.value
     cart.classList.remove("error")
 }
 
+// SECOND BTN ADD FOOD TO THE LIST
+const addInput = document.getElementById("add-input")
+const addBtn = document.getElementById("add-btn")
 
 
+addBtn.addEventListener("click", () =>{
+    const li = document.createElement("li")
+    const add = addInput.value
+    for(let i = 0; i < 1; i++){
+        store.push(add)
+        li.textContent = `${i} ${store[i]}`
+        menu.appendChild(li)
+        addInput.value = ""
+    }
+    
+})
 
                                             // DEMO CODE
 
