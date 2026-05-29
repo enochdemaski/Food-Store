@@ -20,11 +20,22 @@ body{
     height: 100vh;
 }
 
+.btn-con{
+    background-color: var(--black-color);
+}
+
 .buttons{
     display: flex;
     justify-content: center;
 }
 
+
+#heading{
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    min-height: 3rem;
+}
 
 
 .first{
