@@ -115,7 +115,7 @@ addBtn.addEventListener("click", () =>{
 const headText = document.getElementById("heading")
 
 const type = new Typed("#heading",{
-    strings: ["check for available food.", "add other food.", "replace food."],
+    strings: ["check for available food.", "add other foods.", "replace food."],
     typeSpeed: 70,
     backSpeed: 20,
     smartBackspace: false,
